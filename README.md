@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Discussion Question: State and Conditional Rendering
 
-## Available Scripts
+## Objective
 
-In the project directory, you can run:
+Your goal is to implement a number of user settings for our application using state to allow users to change the appearance of the application.
 
-### `npm start`
+### List vs Card View
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In `App`, you'll find a button that says "Switch to List View"
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+When this button is clicked, the view should change from a card view into a list view. The text on the button should also change to "Switch to Card View"
 
-### `npm test`
+We've provided you with an`ArticleItem` component - inspect its `props` and figure out how to render it in place of `ArticleCard`. In addition, for styling, we've provided `list` and  `cards` CSS classes - find `cards` in `App` and try switching it to `list` to see what it does. How could you make the CSS `className` switch along with state?
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clicking the button again should switch the view back.
 
-### `npm run build`
+### Light vs Dark Mode
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In `App`, you'll find a button that says "Switch to Dark Mode"
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+When this button is clicked, the view should change to a dark theme. The text on the button should also change to "Switch to Light View"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We've provided a CSS class called `dark`. Look through all of the code that's already in place for the `light` className. Try replacing them with `dark` and see how the style of the application changes. Consider how you might allow state to control which style to apply.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Questions to ask
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. What state will you need? What data types will they hold?
+2. Where does state need to be? Which components need access to this data?
+3. How can we use state in coordination with conditional rendering to allow the user the control what appears on the page?
