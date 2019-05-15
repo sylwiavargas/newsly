@@ -28,3 +28,15 @@ We've provided a CSS class called `dark`. Look through all of the code that's al
 1. What state will you need? What data types will they hold?
 2. Where does state need to be? Which components need access to this data?
 3. How can we use state in coordination with conditional rendering to allow the user the control what appears on the page?
+
+### Bonus
+
+When clicking on a `ArticleItem`, display additional details (e.g. author, description). Clicking on the same `ArticleItem` will close the additional details. Any number of `ArticleItem`s can be open at the same time.
+
+Consider where state should live and what data type would best express whether the details are showing or not. Why does it live there? Why did you choose the data type you chose?
+
+### Bonus bonus
+
+When clicking on an `ArticleItem` display additional details. When another `ArticleItem` is clicked, the previous `ArticleItem` should close its details and open for the most recently clicked one. Basically, only one can be open at a time.
+
+Consider where state should live and how you keep track of which `ArticleItem` was clicked. Why does state live where you put it? How is this different from the previous bonus?
